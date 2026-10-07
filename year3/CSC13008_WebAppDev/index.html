@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FDF6F0">
+    <meta name="description" content="Gặp gỡ Nhóm 3 — ba sinh viên Web Application Development cùng yêu thích những sản phẩm số hữu ích.">
+    <title>Nhóm 3 — Web Application Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <div class="hero-shapes" aria-hidden="true">
+        <span class="shape shape-circle circle-one"></span>
+        <span class="shape shape-square square-one"></span>
+        <span class="shape shape-circle circle-two"></span>
+        <span class="shape shape-square square-two"></span>
+        <span class="shape shape-circle circle-three"></span>
+      </div>
+      <a class="brand-mark" href="#top" aria-label="Nhóm 3, về đầu trang">
+        <span class="brand-dot dot-coral"></span><span class="brand-dot dot-blue"></span><span class="brand-dot dot-yellow"></span>
+        <span>nhóm 3</span>
+      </a>
+      <div class="hero-copy">
+        <p class="eyebrow"><span aria-hidden="true">✳</span> Ba góc nhìn, một đội ngũ</p>
+        <h1>Nhóm 3 <span class="title-dash">—</span><br>Web Application<br class="mobile-break"> Development</h1>
+        <p class="hero-description">Chúng tôi là ba sinh viên đang học môn Phát triển ứng dụng Web. Trang này giới thiệu hồ sơ, kỹ năng và dự án cá nhân của từng thành viên.</p>
+        <div class="hero-actions">
+          <button class="button button-primary" type="button" data-scroll-to="team">Xem hồ sơ <span aria-hidden="true">↘</span></button>
+          <button class="button button-secondary" type="button" data-scroll-to="contact">Liên hệ <span aria-hidden="true">↗</span></button>
+        </div>
+        <p class="hero-note"><span aria-hidden="true">●</span> Đang cùng nhau xây dựng điều hay ho</p>
+      </div>
+      <a class="scroll-cue" href="#team"><span>Khám phá đội ngũ</span><span aria-hidden="true">↓</span></a>
+    </header>
+
+    <main>
+      <section class="team-section" id="team" aria-labelledby="team-title">
+        <div class="section-heading">
+          <p class="eyebrow"><span aria-hidden="true">✳</span> Mỗi người một thế mạnh</p>
+          <h2 id="team-title">Ba đỉnh, chung một <span>đội</span></h2>
+          <p>Chọn một thành viên để xem hồ sơ, kỹ năng và những dự án đã thực hiện.</p>
+        </div>
+
+        <div class="team-layout">
+          <div class="triangle-stage" aria-label="Sơ đồ tam giác tương tác của Nhóm 3">
+            <svg class="team-triangle" viewBox="0 0 500 450" role="img" aria-label="Tam giác nối ba thành viên trong nhóm">
+              <polygon points="250,40 50,410 450,410" />
+            </svg>
+            <span class="shape stage-circle stage-circle-one" aria-hidden="true"></span>
+            <span class="shape stage-square stage-square-one" aria-hidden="true"></span>
+            <span class="shape stage-circle stage-circle-two" aria-hidden="true"></span>
+            <span class="shape stage-square stage-square-two" aria-hidden="true"></span>
+            <span class="shape stage-circle stage-circle-three" aria-hidden="true"></span>
+            <div class="triangle-center" aria-hidden="true"><span>NHÓM</span><strong>3</strong></div>
+
+            <div class="member-vertex node-a">
+              <button class="member-node" type="button" data-member="a" aria-label="Xem hồ sơ Nguyễn Văn A — Frontend Developer">
+                <span class="node-dot" aria-hidden="true">A</span>
+              </button>
+              <span class="node-label">Nguyễn Văn A <small>Frontend Developer</small></span>
+              <span class="member-preview" aria-hidden="true"><strong>Nguyễn Văn A</strong><span>Frontend Developer</span><em>Đam mê xây dựng giao diện thân thiện với người dùng.</em></span>
+            </div>
+            <div class="member-vertex node-b">
+              <button class="member-node" type="button" data-member="b" aria-label="Xem hồ sơ Trần Thị B — UI/UX Designer">
+                <span class="node-dot" aria-hidden="true">B</span>
+              </button>
+              <span class="node-label">Trần Thị B <small>UI/UX Designer</small></span>
+              <span class="member-preview" aria-hidden="true"><strong>Trần Thị B</strong><span>UI/UX Designer</span><em>Thiết kế trải nghiệm đơn giản nhưng hiệu quả.</em></span>
+            </div>
+            <div class="member-vertex node-c">
+              <button class="member-node" type="button" data-member="c" aria-label="Xem hồ sơ Lê Văn C — Backend Developer">
+                <span class="node-dot" aria-hidden="true">C</span>
+              </button>
+              <span class="node-label">Lê Văn C <small>Backend Developer</small></span>
+              <span class="member-preview" aria-hidden="true"><strong>Lê Văn C</strong><span>Backend Developer</span><em>Xây dựng hệ thống ổn định, dễ mở rộng.</em></span>
+            </div>
+          </div>
+          <p class="team-hint"><span aria-hidden="true">↗</span> Chọn một đỉnh để mở hồ sơ · dùng phím Tab và Enter để điều hướng</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="contact-section" id="contact">
+      <section class="contact-inner" aria-labelledby="contact-title">
+        <div class="contact-copy">
+          <p class="eyebrow"><span aria-hidden="true">✳</span> Có ý tưởng hay?</p>
+          <h2 id="contact-title">Liên hệ với<br>chúng tôi<span class="contact-spark">.</span></h2>
+          <p>Nếu bạn muốn trao đổi hoặc hợp tác, hãy liên hệ qua các kênh dưới đây.</p>
+        </div>
+        <address class="contact-links">
+          <a href="mailto:nhom3.webdev@example.com"><span>Email</span><strong>nhom3.webdev@example.com</strong><span class="link-arrow" aria-hidden="true">↗</span></a>
+          <a href="https://github.com/nhom3-webdev" target="_blank" rel="noreferrer"><span>GitHub</span><strong>github.com/nhom3-webdev</strong><span class="link-arrow" aria-hidden="true">↗</span></a>
+          <a href="https://facebook.com/nhom3.webdev" target="_blank" rel="noreferrer"><span>Facebook</span><strong>facebook.com/nhom3.webdev</strong><span class="link-arrow" aria-hidden="true">↗</span></a>
+          <a href="https://linkedin.com/company/nhom3-webdev" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>linkedin.com/company/nhom3-webdev</strong><span class="link-arrow" aria-hidden="true">↗</span></a>
+        </address>
+      </section>
+      <div class="footer-bottom">
+        <p>© 2026 Nhóm 3 — Web Application Development. All rights reserved.</p>
+        <button class="back-to-top" type="button" aria-label="Về đầu trang" data-scroll-to="top">Về đầu trang <span aria-hidden="true">↑</span></button>
+      </div>
+    </footer>
+
+    <dialog class="profile-dialog" role="dialog" aria-labelledby="dialog-title" aria-modal="true">
+      <div class="dialog-shell">
+        <button class="dialog-close" type="button" aria-label="Đóng">×</button>
+        <div class="dialog-content" id="dialog-content"></div>
+      </div>
+    </dialog>
+  </body>
+</html>
